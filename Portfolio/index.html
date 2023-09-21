@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leo's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Leos Portfolio</h1>
+    </header>
+     <nav>
+        <ul>
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+            
+        </ul>
+    </nav>
+    <main>
+        <section id="about-me">
+            <h2>About Me</h2>
+            <!-- Insert your image here -->
+            <img src="10228.jpg" alt="Jasper Gutierrez" class="profile-image">
+            
+            <p>Welcome to my portfolio! I'm Jasper Leonard D. Gutierrez, some call me Leo, a passionate Fullstack Developer. I have a strong background in Website Programming, and I'm dedicated to bring assets to your company.</p>
+            
+            <p>Throughout my career, I've had the opportunity to work on various exciting projects, including Interactive Coffee Shop Website and API Portfolio. My work is driven by a commitment to my principles.</p>
+            
+            <p>Feel free to explore my portfolio to see some of my recent projects, and don't hesitate to get in touch if you have any questions or collaboration ideas. I'm always excited to connect with fellow professionals and creatives!</p>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="repo-card">
+                <h3><a href="https://github.com/jasleorez/Hi_Jasper/tree/4abc756d1e6e9c84819ed55aea0f7d9df13f79d8/GutierrezJasperLeonard_Website/Hi_Coffee" target="_blank">
+                    Project 1: Coffee Shop (Hi Brew)</a></h3>
+                <p>A responsive coffee shop website that focuses on styling  of the website.</p>
+            </div>
+            <div class="repo-card">
+                <h3><a href="https://github.com/yourusername/project2" target="_blank">Project 2: Leo's Portfolio</a></h3>
+                <p>An interactive blog application built with React and Firebase.</p>
+            </div>
+            <!-- Add more project cards here -->
+        </section>
+    
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li><i class="fab fa-html5"></i> HTML5</li>
+                <li><i class="fab fa-css3"></i> CSS3</li>
+                <li><i class="fab fa-js"></i> JavaScript (ES6+)</li>
+                <li><i class="fab fa-node-js"></i> Node.js & Express.js</li>
+                <li><i class="fas fa-database"></i> Database Management (mySQL & MongoDB)</li>
+            </ul>
+        </section>
+    
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>If you'd like to get in touch, feel free to reach out:</p>
+            <ul>
+                <li><i class="fas fa-envelope"></i> <a href="jaspergutierrez.asi@gmail.com">jaspergutierrez.asi@gmail.com</a></li>
+            </ul>
+            <ul>
+                <li><i class="fab fa-facebook"></i> <a href="https://www.facebook.com/jasleogutierrez" target="_blank">Facebook</a></li>
+                <li><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/jasper.gutierrezz/" target="_blank">Instagram </a></li>
+                <li><i class="fab fa-github"></i> <a href="https://github.com/jasleorez" target="_blank">GitHub </a></li>
+            </ul>
+            <!-- Add the contact form here -->
+            <form id="contact-form" action="https://script.google.com/macros/s/AKfycbwXwze7TEMqksDAqYwswpJEDyDVjN1Tf018cH0FnfDb8UrIArjRHhQdgcW4JtgkDcu2/exec" method="POST">
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+<script src="Portfolio/script.js"></script>   
+</body>
+</html>

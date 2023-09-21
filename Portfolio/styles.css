@@ -1,0 +1,183 @@
+/* Reset some default styles */
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+/* Style the header with a gradient background */
+header {
+    background: linear-gradient(45deg, #1e90ff, #0078d4);
+    color: white;
+    text-align: center;
+    padding: 40px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Style the main content with a subtle pattern background */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 30px;
+    background-image: url('subtle-pattern.png'); /* Add your custom background image */
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the About Me section */
+#about-me {
+    text-align: center;
+    padding: 30px;
+}
+
+/* Style the profile image with a border and shadow */
+.profile-image {
+    max-width: 150px;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Style headings and paragraphs with a custom font */
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+/* Style links with a hover effect */
+a {
+    color: #0078d4;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #00569c;
+}
+
+#skills {
+    text-align: left; /* Align text to the left */
+    padding: 30px 0;
+    background-color: #f7f7f7;
+}
+
+/* Style the skills list */
+#skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+#skills li {
+    font-size: 18px;
+    margin-bottom: 10px; /* Add spacing between skills */
+    display: block; /* Display each skill on a separate line */
+}
+
+/* Style the Font Awesome icons */
+#skills li i {
+    font-size: 24px;
+    margin-right: 10px; /* Add spacing between the icon and text */
+    color: #0078d4; /* Set the icon color */
+}
+
+/* Style the Contact section with a light background */
+#contact {
+    text-align: center;
+    padding: 30px;
+    background-color: #f0f0f0;
+}
+
+ul li {
+    display: inline;
+    margin-right: 20px; /* Add spacing between items */
+}
+
+/* Style Font Awesome icons */
+ul li i {
+    font-size: 24px; /* Adjust the icon size */
+    color: #0078d4; /* Set the icon color */
+    margin-right: 5px; /* Add some spacing between the icon and text */
+}
+
+/* Style the contact form */
+#contact-form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* Style form inputs and textarea with a subtle border */
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #fff;
+}
+
+/* Style the submit button with a gradient background */
+#contact-form button {
+    background: linear-gradient(45deg, #1e90ff, #0078d4);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+#contact-form button:hover {
+    background: linear-gradient(45deg, #0078d4, #00569c);
+}
+
+/* Style the confirmation message */
+.confirmation-message {
+    font-weight: bold;
+    margin-top: 20px;
+    color: #333;
+}
+
+/* Style the navigation bar */
+nav {
+    background: #333;
+    color: white;
+    text-align: center;
+}
+
+/* Style the navigation menu */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 20px; /* Add spacing between menu items */
+}
+
+/* Style navigation links */
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
