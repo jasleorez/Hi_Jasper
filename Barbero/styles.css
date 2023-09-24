@@ -1,0 +1,217 @@
+/* Reset some default styles for consistency */
+
+:root{
+    --main-color: #d3ad7f;
+    --black: #13131a;
+    --bg: #010103;
+    --border: .1rem solid rgba(255,255,255,.3);
+}
+body, h1, h2, h3, p, ul, li, form, input, select, button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Set a background image or color */
+body {
+    background: url('bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+
+/* Header styles */
+header {
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 36px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+/* Section styles */
+section {
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+/* Form styles */
+form {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 18px;
+    color: #fff;
+}
+
+/* Style the input fields for date and time */
+input[type="date"],
+input[type="time"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 2px solid #fff;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Style the hover and focus states for input fields (optional) */
+input[type="date"]:hover,
+input[type="date"]:focus,
+input[type="time"]:hover,
+input[type="time"]:focus {
+    background: rgba(255, 255, 255, 0.3);
+    outline: none;
+}
+
+select#service {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 2px solid #fff;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    border-radius: 5px;
+    font-size: 16px;
+    appearance: none; /* Remove default dropdown arrow */
+    background-image: url('/dropdown.PNG'); /* Add a custom dropdown arrow */
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 15px;
+}
+
+/* Style the select options */
+select#service option {
+    padding: 5px;
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+    color: #fff;
+}
+
+/* Style the images within options */
+select#service option img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+/* Style the hover state of options */
+select#service option:hover {
+    background: rgba(0, 0, 0, 0.8); /* Darker background on hover */
+    cursor: pointer;
+}
+button[type="submit"] {
+    background: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background: #2980b9;
+}
+
+/* List styles */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+}
+
+.about .row{
+    display: flex;
+    align-items: center;
+    background: var(--black);
+    flex-wrap: wrap;
+}
+
+.about .row .image{
+    flex: 45rem;
+}
+.about .row .image img{
+    width: 100%;
+}
+.about .row .content{
+    flex: 1 1 45rem;
+    padding: 2rem;
+}
+.about .row .content h3{
+    font-size: 3.1rem;
+    color: #fff;
+    text-transform: none;
+}
+.about .row .content p{
+    font-size: 1.8rem;
+    color: #ccc;
+    padding: 1rem;
+    line-height: 1.8;
+    text-transform: none;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    font-size: 14px;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    section {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    label {
+        font-size: 16px;
+    }
+
+    input[type="date"],
+    input[type="time"],
+    select {
+        font-size: 14px;
+    }
+
+    button[type="submit"] {
+        font-size: 16px;
+    }
+}

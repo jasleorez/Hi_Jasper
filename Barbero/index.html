@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Barbero - Book Your Haircut</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Barbero</h1>
+    </header>
+    
+    <section>
+        <h2>Book an Appointment</h2>
+        <form>
+            <label for="customerName">Your Name:</label>
+            <input type="text" id="customerName" name="customerName" required>
+            <br>
+
+            <label for="customerEmail">Your Email:</label>
+            <input type="email" id="customerEmail" name="customerEmail" required>
+            <br>
+            <label for="service">Select Service:</label>
+            <select id="service" name="service" required>
+                <option value="haircut">Haircut - ₱200 <img src="/haircut.jpg" alt="Haircut"> </option>
+                <option value="beard-trim">Beard Trim - ₱50 <img src="/beardtrim.jpg" alt="trim"> </option>
+                <option value="hot-towel-shave">Hot Towel Shave - ₱150 <img src="/htshave.jpg" alt="shave"> </option>
+                <option value="buzz-cut">Buzz Cut - ₱100 <img src="/buzz.jpg" alt="Buzz cut"> </option>
+            </select>
+            <br>
+            <label for="date">Select Date:</label>
+            <input type="date" id="date" name="date" required>
+            <br>
+            <label for="time">Select Time:</label>
+            <input type="time" id="time" name="time" required>
+            <br>
+            
+            <button type="submit">Confirm Appointment</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Your Appointments</h2>
+        <ul>
+            <li>
+                <h3>Appointment 1</h3>
+                <p>Barbershop: Barbero</p>
+                <p>Date & Time: Date and Time 1</p>
+                <p>Service: Haircut - ₱200</p>
+            </li>
+            <!-- More appointments go here -->
+        </ul>
+    </section>
+
+    <section class="about" id="about">
+    
+        <h1 class="heading"> <span>about</span> us </h1>
+        
+        <div class="row">
+            
+            <div class="image">
+                <img src="ABT_US.jpg" alt="harvesting">
+            </div>
+           
+            <div class="content">
+                <h3>What makes our sevice GREAT?</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Atque cupiditate quae iusto numquam. Ipsa tenetur, officia fugit adipisci 
+                    illum quod voluptatum modi laudantium maiores 
+                    rem reprehenderit consectetur, saepe, odit veritatis? </p> 
+                <p>Aspernatur repudiandae deserunt veniam 
+                    at corporis facilis sint assumenda aut?</p>
+            </div>
+    
+        </div>
+    </section>
+    
+
+    <footer>
+        <p>&copy; 2023 Barbero</p>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const customSelect = document.querySelector('.custom-select');
+            const selectedOption = customSelect.querySelector('.selected-option');
+            const options = customSelect.querySelector('.options');
+            
+            customSelect.addEventListener('click', () => {
+                options.classList.toggle('open');
+            });
+            
+            options.addEventListener('click', (e) => {
+                if (e.target.tagName === 'LI') {
+                    const selectedValue = e.target.getAttribute('data-value');
+                    selectedOption.textContent = e.target.textContent;
+                    options.classList.remove('open');
+                    
+                    // Update the hidden select input (if needed)
+                    const hiddenSelect = document.getElementById('service');
+                    if (hiddenSelect) {
+                        hiddenSelect.value = selectedValue;
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
